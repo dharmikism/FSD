@@ -1,0 +1,60 @@
+
+🐱 GitHub Link: https://github.com/B-Rajinikanth/SUH-Online-Courses.git
+
+
+🧩 Challenge 1: Build a Header with Navigation using React Router
+
+🎯 Task
+
+Create a reusable Header component and implement page navigation using `react-router-dom`
+
+📌 Requirements
+
+1. Header Component
+
+* Logo + Website Title
+* Navigation Menu:
+
+  * Home
+  * Courses
+  * About
+  * Contact
+* Action Buttons:
+
+  * Login
+  * Sign Up
+-------------------------------------------------------
+
+2. Routing (Main Focus 🚀)
+
+* Install and use `react-router-dom`
+
+* Create separate pages/components:
+
+  * Home.jsx
+  * Courses
+  * About.jsx
+  * Contact.jsx
+
+* When clicking menu items:
+  👉 Navigate to respective pages without page reload
+-------------------------------------------------------
+3. Use Proper Components
+
+* Use `<BrowserRouter>`, `<Routes>`, `<Route>`
+* Use `<Link>` or `<NavLink>` inside Header
+-------------------------------------------------------
+📌 UI Layout
+Header should be at the top (fixed or static)
+Navigation links should be center or right-aligned
+Logo + Title should be left-aligned
+Page content should change below the header
+Header should be visible on all pages
+-------------------------------------------------------
+🧪 Expected Flow
+Click Home → Show Home page
+Click About → Show About page
+Click Contact → Show Contact page
+Header remains unchanged
+
+

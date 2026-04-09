@@ -1,0 +1,84 @@
+🐱 GitHub Link: https://github.com/B-Rajinikanth/SUH-Online-Courses.git
+
+
+
+🧩 Challenge 4: Add Interactivity using useState
+
+🎯 Task
+
+Enhance the Courses feature by adding state-based interactions using `useState`
+--------------------------------------------------------------------------------
+
+📌 Feature 1: Join Button Toggle (Recommended ⭐)
+
+💡 Idea
+
+When user clicks “Join Now”:
+
+* Button text should change → `Joined`
+* Button style should change
+* Prevent multiple clicks
+
+🧪 Expected Behavior
+
+* Before click → `Join Now`
+* After click → `Joined ✅`
+
+🧠 Concept 
+
+* `useState`
+* Event handling
+* Conditional rendering
+
+🔧 Hint
+
+```jsx id="p3m9vk"
+const [joined, setJoined] = useState(false);
+
+<button onClick={() => setJoined(true)}>
+  {joined ? "Joined" : "Join Now"}
+</button>
+```
+
+--------------------------------------------------------------------------------
+
+📌 Feature 2: Show/Hide Course Content
+
+💡 Idea
+
+In CourseDetails page:
+
+* Add button: `Show Content`
+* Toggle course syllabus visibility
+
+🧪 Expected Behavior
+
+* Click → content appears
+* Click again → hides
+
+🔧 Hint
+
+```jsx id="n8x2qd"
+const [showContent, setShowContent] = useState(false);
+
+<button onClick={() => setShowContent(!showContent)}>
+  {showContent ? "Hide Content" : "Show Content"}
+</button>
+```
+
+--------------------------------------------------------------------------------
+
+📌 Feature 3: Search / Filter Courses (Optional 🚀)
+
+💡 Idea
+
+* Add input box in Courses page
+* Filter courses based on title
+
+🧠 Concept 
+
+* Controlled components
+* Real-time filtering
+
+
+--------------------------------------------------------------------------------
