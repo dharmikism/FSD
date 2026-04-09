@@ -121,6 +121,114 @@ useEffect(() => {
 }, [])
 ```
 
+## Routing With React Router
+
+When your app has multiple pages or views, React Router helps you switch between screens without reloading the page.
+
+You usually start with these pieces:
+
+- `BrowserRouter` wraps the app and enables routing.
+- `Routes` groups all the route definitions.
+- `Route` maps a URL path to a component.
+- `Link` and `NavLink` let users navigate without full page refreshes.
+- `useParams` reads values from the URL.
+- `useNavigate` moves users programmatically.
+- `Outlet` renders nested routes.
+- `Navigate` redirects from one route to another.
+
+### Basic Setup
+
+```jsx
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+
+function Home() {
+	return <h2>Home Page</h2>
+}
+
+function Courses() {
+	return <h2>Courses Page</h2>
+}
+
+function App() {
+	return (
+		<BrowserRouter>
+			<nav>
+				<Link to="/">Home</Link>
+				<Link to="/courses">Courses</Link>
+			</nav>
+
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="/courses" element={<Courses />} />
+			</Routes>
+		</BrowserRouter>
+	)
+}
+```
+
+### What Each Part Does
+
+`BrowserRouter` creates the routing context for the app. Without it, route-related components will not work.
+
+`Routes` looks through the available routes and renders the first matching one.
+
+`Route` connects a URL path to a React component through the `element` prop.
+
+`Link` replaces regular anchor tags for internal navigation so the page does not fully reload.
+
+`NavLink` works like `Link`, but it can also tell you when a route is active.
+
+`useParams` is useful for dynamic routes like `/courses/:id`.
+
+`useNavigate` is useful after form submissions, logins, or redirects.
+
+`Outlet` is used when one layout wraps multiple nested pages.
+
+`Navigate` is used when you want to send the user somewhere else automatically.
+
+### Example Of A Dynamic Route
+
+```jsx
+import { BrowserRouter, Routes, Route, useParams } from 'react-router-dom'
+
+function CourseDetails() {
+	const { id } = useParams()
+
+	return <h2>Course ID: {id}</h2>
+}
+
+function App() {
+	return (
+		<BrowserRouter>
+			<Routes>
+				<Route path="/courses/:id" element={<CourseDetails />} />
+			</Routes>
+		</BrowserRouter>
+	)
+}
+```
+
+### Common Routing Pattern
+
+1. Wrap the app in `BrowserRouter`.
+2. Add `Routes` and `Route` components.
+3. Use `Link` or `NavLink` for navigation.
+4. Use `useParams` for route values.
+5. Use `useNavigate` for redirects and after actions.
+
+### When To Use Routing
+
+Use routing when your app has separate screens such as:
+
+- home
+- about
+- courses
+- course details
+- login and signup
+- dashboard pages
+
+If you are building a small single-page demo, routing may not be necessary yet.
+
 ## A Simple Mental Model
 
 Think of React like this:

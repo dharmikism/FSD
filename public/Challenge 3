@@ -1,0 +1,35 @@
+🐱 GitHub Link: https://github.com/B-Rajinikanth/SUH-Online-Courses.git
+
+
+
+🧩 Challenge 3: Build Courses Page with Course Cards
+🎯 Task
+* Create a Courses page and display multiple CourseCard components.
+-------------------------------------------------------------------------
+📌 Requirements
+1. Courses Page (Courses.jsx)
+* Create a separate page for Courses
+* Display multiple CourseCard components
+* Use an array of course data
+* Render cards using .map()
+-------------------------------------------------------------------------
+2. CourseCard Component (CourseCard.jsx)
+
+Each card must include:
+
+📸 Thumbnail Image
+🏷️ Course Title
+📝 Course Description
+🔘 Buttons:
+View Course
+Join Now
+-------------------------------------------------------------------------
+3. Props (Important ⭐)
+
+Pass data using props
+-------------------------------------------------------------------------
+🧪 Expected Behavior
+Navigate to Courses page
+See multiple course cards
+Cards rendered dynamically
+Layout is clean and aligned

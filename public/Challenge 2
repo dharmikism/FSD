@@ -1,0 +1,32 @@
+
+🐱 GitHub Link: https://github.com/B-Rajinikanth/SUH-Online-Courses.git
+
+
+🧩 Challenge 2: Create a Top Announcement Strip
+🎯 Task
+Create a reusable strip component with a gradient background and display it above the Header on all pages.
+
+
+📌 Requirements
+1. Top Strip Component
+* Create a component (e.g., TopStrip.jsx)
+* Add:
+  - Gradient background (any colors)
+  - Centered text (example: "🔥 Admissions Open 2026")
+  - Text should be clearly visible
+-------------------------------------------------------------
+2. Positioning (Important ⭐)
+* Strip must be placed above the Header
+* It should be visible on all pages
+* Do NOT duplicate it in each page → place it in App.jsx
+-------------------------------------------------------------
+3. Styling
+* Height: small (like a notification bar)
+* Text aligned center
+* Use CSS / Tailwind
+-------------------------------------------------------------
+🧪 Expected Behavior
+- Strip is always visible
+- Header appears below it
+- Only page content changes on navigation
+-------------------------------------------------------------
